@@ -1,0 +1,144 @@
+/* ===== Background ===== */
+
+.stApp {
+
+    background-color: #f5efe6;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(139, 115, 85, 0.15) 1px,
+            transparent 1px
+        );
+
+    background-size: 25px 25px;
+}
+
+/* ===== Main Glass Container ===== */
+
+.main .block-container {
+
+    background: rgba(255, 248, 240, 0.75);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(160, 130, 98, 0.15);
+
+    border-radius: 28px;
+
+    padding: 2rem;
+
+    max-width: 950px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== Sidebar ===== */
+
+[data-testid="stSidebar"] {
+
+    background: #e8dccb;
+
+    border-right: 1px solid rgba(139,115,85,0.15);
+}
+
+/* ===== Chat Messages ===== */
+
+[data-testid="stChatMessage"] {
+
+    background: rgba(255,255,255,0.55);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(139,115,85,0.12);
+
+    padding: 10px;
+
+    margin-bottom: 12px;
+}
+
+/* ===== Input Box ===== */
+
+[data-testid="stChatInput"] {
+
+    background: white;
+
+    border-radius: 18px;
+}
+
+/* ===== Text Colors ===== */
+
+html,
+body,
+p,
+span,
+div {
+
+    color: #4e3b2f;
+}
+
+/* ===== Headers ===== */
+
+h1,
+h2,
+h3 {
+
+    color: #6b4f3a;
+}
+
+/* ===== Buttons ===== */
+
+.stButton button {
+
+    background: #b08968;
+
+    color: white;
+
+    border-radius: 12px;
+
+    border: none;
+
+    transition: 0.3s;
+}
+
+.stButton button:hover {
+
+    background: #9c7555;
+}
+
+/* ===== Soft Glow ===== */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    background: rgba(176,137,104,0.15);
+
+    filter: blur(120px);
+
+    top: -150px;
+    right: -150px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+/* ===== Hide Streamlit Branding ===== */
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
